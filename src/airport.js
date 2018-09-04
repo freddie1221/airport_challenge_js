@@ -20,7 +20,9 @@ Airport.prototype.takeOff = function() {
   }
 }
 
-var isStormy = function () {
+
+
+Airport.prototype.isStormy = function () {
   if(randNumber(4) < 3) {
     return false
   } else {

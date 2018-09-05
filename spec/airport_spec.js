@@ -1,13 +1,10 @@
 describe ('Airport', function() {
   beforeEach(function() {
     heathrow = new Airport(5);
-    // spyOn(heathrow, 'isStormy').and.returnValue(false)
   });
   it ('show the planes it has', function() {
     expect(heathrow.planes.length).toEqual(1)
   });
-
-
 
   describe ('Sunny weather - everything can proceed as normal', function () {
     beforeEach(function() {
@@ -51,7 +48,7 @@ describe ('Airport', function() {
     });
   });
 
-
+  
   describe ('isStormy', function() {
     it ('can return sunny or stormy', function() {
       expect([true, false]).toContain(heathrow.isStormy())
